@@ -1,0 +1,65 @@
+.sign-container {
+  width: 8rem;
+  height: 8rem;
+  background-color: aliceblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s ease-in;
+}
+
+.circles-one {
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  background-color: rgba(87, 107, 135, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -997;
+  /* box-shadow: 0 0 10px rgba(86, 107, 135, 0.7); */
+  transition: all 3s ease-in;
+}
+
+.circles-two {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  background-color: rgba(87, 107, 135, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -998;
+  /* box-shadow: 0 0 10px rgba(86, 107, 135, 0.7); */
+  transition: all 3s ease-in;
+}
+
+.circles-three {
+  position: absolute;
+  width: 35rem;
+  height: 35rem;
+  background-color: rgba(88, 107, 135, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -999;
+  /* box-shadow: 0 0 10px rgba(86, 107, 135, 0.7); */
+  transition: all 3s ease-in;
+}
+
+@media screen and (max-width: 555px) {
+  .sign-container {
+    width: 5rem;
+    height: 5rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s ease-in;
+  }
+}

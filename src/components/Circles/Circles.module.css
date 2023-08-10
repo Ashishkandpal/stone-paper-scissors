@@ -1,0 +1,43 @@
+.circles-container{
+    position: relative;
+    /* width: 70vw;
+    height: 70vh; */
+    /* background-color: white; */
+    z-index: -1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .most-outer{
+    position: absolute;
+    width: 50vw;
+    height: 76vh;
+    background-color: #1F294A;
+    z-index: -999;
+    border-radius: 50%;
+}
+
+.outer{
+    position: absolute;
+    width: 44vw; height: 66vh;
+    background-color: #263051;
+    z-index: -999;
+    border-radius: 50%;
+}
+
+.inner{
+    position: absolute;
+    width: 32vw; height: 53vh;
+    background-color: #2B3554;
+    z-index: -999;
+    border-radius: 50%;
+}
+
+.most-inner{
+    position: absolute;
+    width: 20vw; height: 35vh;
+    background-color: #2f3a5c;
+    z-index: -999;
+    border-radius: 50%;
+} 

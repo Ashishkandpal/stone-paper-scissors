@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing-title {
+  font-size: 3rem;
+  color: rgba(168, 239, 255, 0.7);
+  text-shadow: 0 0 20px rgba(168, 239, 255, 0.7);
+}
+
+.rock {
+  position: absolute;
+  left: 225px;
+  top: -62px;
+}
+
+.paper {
+  position: absolute;
+  left: -57px;
+  bottom: -96px;
+}
+
+.scissors {
+  position: absolute;
+  left: 74px;
+  top: 167px;
+}
+
+/* Define the animation keyframes */
+@keyframes circular {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the .whole-img element */
+.whole-img {
+  animation: circular 4s linear infinite;
+  transform-origin: center;
+}
+
+/* Reset the rotation for the inner divs to counteract the parent rotation */
+.whole-img > div {
+  /* transform: rotate(0deg); */
+  transform-origin: center;
+}
+
+/* You may need to add specific rotations for the inner divs based on your layout */
+.whole-img .rock {
+  transform: rotate(-45deg);
+}
+
+.whole-img .paper {
+  transform: rotate(135deg);
+}
+
+.whole-img .scissors {
+  transform: rotate(225deg);
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+  /* --c1: rgba(255, 0, 0, 0.7);
+	--c2: rgba(0, 0, 255, 0.7);
+    --c3: rgba(255, 255, 0, 0.7); */
+}
+
+.btn {
+  font-size: 3vw;
+  margin: max(1rem, 3vw);
+  border: 0.3rem solid;
+  padding: 2vw 6vw;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1),
+      0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  color: whitesmoke;
+  cursor: pointer;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .triangle-img {
+    width: 50vw;
+  }
+
+  .rock {
+    position: absolute;
+    left: 165px;
+    top: -53px;
+  }
+
+  .paper {
+    position: absolute;
+    left: -34px;
+    bottom: -65px;
+  }
+
+  .scissors {
+    position: absolute;
+    left: 63px;
+    top: 148px;
+  }
+}
