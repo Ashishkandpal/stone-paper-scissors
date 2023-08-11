@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot1](public/game ss/Screenshot 2023-08-08 at 5.55.09 PM.png)
-![screenshot2](public/game ss/Screenshot 2023-08-08 at 5.55.29 PM.png)
-![screenshot3](public/game ss/Screenshot 2023-08-08 at 5.55.46 PM.png)
-![screenshot4](public/game ss/Screenshot 2023-08-08 at 5.56.16 PM.png)
-![screenshot5](public/game ss/Screenshot 2023-08-08 at 5.59.30 PM.png)
-![screenshot6](public/game ss/Screenshot 2023-08-08 at 5.59.40 PM.png)
+![screenshot1](public/game-ss/Screenshot-1.png)
+![screenshot2](public/game-ss/Screenshot-2.png)
+![screenshot3](public/game-ss/Screenshot-3.png)
+![screenshot4](public/game-ss/Screenshot-4.png)
+![screenshot5](public/game-ss/Screenshot-5.png)
+![screenshot6](public/game-ss/Screenshot-6.png)
 
 ### Links
 
