@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/created-this-project-using-react-and-used-css-module-format-n75qOvsIbf)
 - Live Site URL: [Stone-Paper-Scissors](https://stone-paper-scissors-eta.vercel.app/)
 
 ## My process
